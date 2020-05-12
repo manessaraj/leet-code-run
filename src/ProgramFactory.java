@@ -10,8 +10,9 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.util.Properties;
 
-/*Factory to create instance of Program based on configuration defined
-* TODO: Follow the Factory Design Pattern
+/*
+* Factory to create instance of Program based on configuration defined
+* This follows the Simple Factory pattern, which is not a design pattern.
 * */
 public class ProgramFactory {
 
@@ -38,9 +39,10 @@ public class ProgramFactory {
         return properties;
     }
 
-
-
-    //TODO: This should change based on Factory Design pattern
+    /*
+    * Simple Program factory which instancitiates a program based on
+    * config file and pass back to Framework
+    */
     public static Program getProgram() {
         Program runInstance = null;
         try {

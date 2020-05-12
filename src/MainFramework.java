@@ -4,13 +4,15 @@ import java.util.logging.Logger;
 
 
 /*
+* This is the Main framework which runs a problem and its solution.
+* It does chanhe with problem or type of input to problem or its solution.
+* Only thing it takes as argument is a instance of Problem
 * @author smanes
 * */
-public class Main {
+public class MainFramework {
     /* Console logs should be part of loggers
     *  */
 
-    //TODO: How can I inject Logger into Program Objects: Design Pattern
     private final static Logger logger = Logger.getLogger("Main");
 
 
